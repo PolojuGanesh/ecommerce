@@ -1,0 +1,134 @@
+.ul-container-for-all-products {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+.main-heading {
+  color: #3e4c59;
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.home-main-container {
+  background-color: #ddeced;
+  background-size: cover;
+}
+
+.home-sub-container {
+  background-color: #ddeced;
+  background-size: cover;
+  padding-left: 6%;
+  padding-right: 5%;
+}
+
+.heading-and-filter-container {
+  margin-right: 3%;
+}
+
+.products-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.select-element {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .select-element {
+    width: 80px;
+    height: 45px;
+  }
+
+  .main-heading {
+    font-size: 24px;
+  }
+}
+
+.select-element:focus {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.select-element option {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.heading-and-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-error-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  padding-bottom: 64px;
+  background-size: cover;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .products-error-view-container {
+    margin-top: 0px;
+    margin-left: 30px;
+    padding-bottom: 0;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+.product-failure-heading-text {
+  color: #171f46;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .product-failure-heading-text {
+    font-size: 24px;
+  }
+}
+
+.products-failure-description {
+  text-align: center;
+  color: #64748b;
+  font-family: "Roboto";
+  font-size: 14px;
+  width: 90%;
+  max-width: 288px;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 768px) {
+  .products-failure-description {
+    font-size: 18px;
+    width: 60%;
+    max-width: 466px;
+  }
+}
